@@ -69,6 +69,28 @@ main {
 text-align: center;
 }
 
+.PageHeader{
+  color:blue
+}
+
+.Text{
+color:black;
+font-family: Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    background-color :blue;
+}
+
+.HeaderText{
+  color:black;
+font-family: Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    background-color :blue;
+}
+.TableItemLine{
+  color:blue;
+}
+
+
 h1 {
   font-weight: bold;
   font-size: 1.5rem;
