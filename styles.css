@@ -45,7 +45,7 @@ nav-list li a {
  
 }
 .nav-list li a:hover{
-  color:white;
+  color:grey;
  }
 
  
@@ -73,7 +73,7 @@ text-align: center;
   color:blue
 }
 
-.Text{
+.ReportSelf{
 color:black;
 font-family: Arial,Helvetica,sans-serif;
     font-size: 15px;
@@ -90,6 +90,9 @@ font-family: Arial,Helvetica,sans-serif;
   color:blue;
 }
 
+.height{
+  background-color: lightblue;
+}
 
 h1 {
   font-weight: bold;
