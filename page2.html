@@ -54,9 +54,169 @@
        <a class="service-link" href="https://servicecentral.capgemini.com/sc/">Service Central.</a>
  </ul>
         </tr>
+
+
+        <table style="width: 50%; margin-bottom:15px;" align="center">
+        <table class="employee-details-table" style="background: #f1f4f8;align="left">
+          <tr>
+        <td style="width: 14%">
+        <label id="EmpDetails" style="font-size: 20px; font-family: ubuntu; color:black; font-style: normal; font-weight: bold; margin-bottom: 0;">
+        Employee Details 
+        </label>
+     </td>
+    </tr>
+
+    <tr style="background":white;"font-size":15px;"color":black>
+    <td style="width: 8%; font-family: ubuntu; font-size: 14px; color: #000000;" align="left">
+    <label id="lblEmpID">
+    Employee Name</label>
+ </td>
+ <td style="width: 4%; font-family: ubuntu; font-size: 14px; color: black;" align="left">
+ <label id="LabelEmployee">
+ :</label>
+</td>
+<td style="width: 27% ; font-family: ubuntu; font-size: 14px; color: #000000;">
+<span id="ctl00_ContentPlaceHolder1_lblAEmployeeName">Tiwari, Puja</span>
+</td>
+
+<td style="width: 10%; font-family: ubuntu; font-size: 14px; color: #000000;" align="left">
+<label id="lblWeekEnding" style="font-family: ubuntu; font-size: 14px; color: #000000;" class="Label">Week Ending
+
+<tr style="background: white; font-size: 15px; color: black;">
+<td style="width: 9% ; font-size: 15px; color: black;" align="left">
+   <label id="LabelWeek">
+   Approver</label>
+</td>
+<td style="width: 4%" align="left">
+   <label id="LabeApprover">:</label>
+</td>
+<td style="width: 29%">
+   <span id="ctl00_ContentPlaceHolder1_lblApproverName">Vipin Sharma</span>
+</td>
+<td style="width: 10%; height: 18px">Leave Code
+</td>
+<td style="width: 2%" align="left">
+   <label id="LabelLeave">:</label>
+   </td>
+   <td style="width: 35%">
+   <span id="ctl00_ContentPlaceHolder1_lblLeaveCode">100383850</span>
+</td>
+ </table>
+</table>
+
+<table>
+
+<div class="Projectheading">
+<span id="ctl00_ContentPlaceHolder1_lblProjectDetails" style="font-size:15px;font-weight:bold;display:inline-block;color:Black;;height:15px;width:110px;">Project Details</span>
+</div></table>
     
-    <main>
+<table style="width:98%; margin: 0 15px 20px;padding: 10px;border:2px solid #f1f4f8;border-collapse: separate;border-radius: 0 0 5px 5pxborder-spacing: initial">
+<tr>
+<td style="padding: 10px;">
+<table id="ctl00_ContentPlaceHolder1_project"  style="border-collapse:collapse;">
+<tr>
+<td style="height:10px;width:10px;">
+<table bgcolor="White" style="background-color: #ffffff; width:103%; border: 1px  ; border-radius: 6px 6px 0px 0px;">
+   <tbody><tr style="font-family: ubuntu;  font-size: 16px; font-weight: bold;  
+      border-bottom-style: solid; border-bottom-width: 1px;">
+      <td colspan="2" style="font-family: ubuntu; text-align:right;   font-size: 15px; font-weight: bold; font-style: normal; font-variant: normal; border-bottom-width: 1px;">
+         <span style="font-size:16px;font-weight:bold;font-family: ubuntu;  color: #0070AD;">ProjectID-</span>
+      </td>
+      <td style="font-family: ubuntu; font-size: 16px;  font-weight: bold; font-style: normal; font-variant: normal; 
+border-bottom-width: 1px; border-bottom-color: #E2E7EE;">
+<span id="ProjectID" style="font-size:16px;font-weight:bold;font-family: ubuntu;   color: black;">100149956</span>
+</td>
+</table>
+</table>
+
+
+
+      <table style="width: 100%;" align="center">
+      <tbody><tr class="month-selection-div">
+         <td style="width: 50%">
+            <label id="lblPeriod" class="Label month-selection">
+            Period :</label>
+            <select name="months" onchange="javascript:setTimeout('__doPostBack(\'Months\',\'\')', 0)" id="Months" title="Month" style="color:black;font-size:10px;">
+<option value="1">Jan</option>
+<option value="2">Feb</option>
+<option value="3">Mar</option>
+<option value="4">Apr</option>
+<option value="5">May</option>
+<option value="6">Jun</option>
+<option value="7">Jul</option>
+<option value="8">Aug</option>
+<option value="9">Sep</option>
+<option value="10">Oct</option>
+<option value="11">Nav</option>
+<option value="12">Dec</option>
+
+</select>
+            <select name="Years" onchange="javascript:setTimeout('__doPostBack(\'Years\',\'\')', 0)" id="Years" title="Year" style="color:black;font-size:10px;">
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+
+</select>
+         </td>
+      </tr>
       
-    </main>
+                  <tr>
+                      <td style="width: 50%; vertical-align: top">
+                          <div>
+<table class="table-border" cellspacing="0" rules="cols" id="Timecardfill" style="border-width:1px;border-style:solid;width:100%;border-collapse:collapse;">
+<tbody>
+  
+  <tr class="timecardfillBorder" style="color:blue;background-color:grey;font-size:10px;font-weight:bold;height:15px;">
+<th scope="col">Sel</th>
+<th align="center" scope="col">Timecard #</th>
+<th align="center" scope="col">Submitted</th>
+<th align="center" scope="col">Hrs.</th>
+<th align="center" scope="col">Week Ending</th>
+<th align="center" scope="col">Approved</th>
+<th align="center" scope="col">Status</th>
+
+</tr>
+<tr class="timeItemBorder" style="color:Red;background-color:blue;font-size:11px;font-weight:normal;height:20px;">
+<td align="center" style="width:5%;">
+                                          <input name="rbtnSel" tabindex="2" type="radio" value="" onclick="SelectLineID('NEW    ' + 'Z' + 'DD/MM/YYYY 12:00:00 AM    '+ 'Z' + 'DD-MM-YY    '+ 'Z' + '    '+'Z'+'Due')">
+                                      </td><td align="center" style="width:15%;">
+                                          <a id="ctl00_ContentPlaceHolder1_grvTimecardSummary_ctl02_lnkTimevcardID" title="Timecard ID" value="951" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$grvTimecardSummary$ctl02$lnkTimevcardID','')" style="color:#354C16;font-family:Arial,Helvetica,sans-serif;font-size:8pt;text-decoration:underline">NEW</a>
+                                      </td><td align="center" style="width:14%;">&nbsp;</td><td align="center" style="width:5%;">&nbsp;</td><td align="center" style="width:13%;"><DD-MM-YY></DD-MM-YY></td><td align="center" style="width:10%;">&nbsp;</td><td align="center" style="width:13%;">Over Due</td><td align="left" style="width:200px;">&nbsp;</td><td>
+                                          
+                                          
+                                          
+                                          
+                                          
+                                          
+                                      </td>
+</tr><tr class="ItemBorder" style="color:#616465;background-color:#EBECEC;font-size:11px;font-weight:normal;height:20px;">
+<td align="center" style="width:5%;">
+                                          <input name="rbtnSel" tabindex="2" type="radio" value="" onclick="SelectLineID('NEW    ' + 'Z' + 'MM/DD/YYYY 12:00:00 AM    '+ 'Z' + 'DD-MM-YY    '+ 'Z' + '    '+'Z'+'Due')">
+                                      </td><td align="center" style="width:15%;">
+                                          <a id="ctl00_ContentPlaceHolder1_grvTimecardSummary_ctl03_lnkTimevcardID" title="Timecard ID" value="952" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$grvTimecardSummary$ctl03$lnkTimevcardID','')" style="color:#354C16;font-family:Arial,Helvetica,sans-serif;font-size:8pt;text-decoration:underline">NEW</a>
+                                      </td><td align="center" style="width:14%;">&nbsp;</td><td align="center" style="width:5%;">&nbsp;</td><td align="center" style="width:13%;"><DD-MM-YY></DD-MM-YY></td><td align="center" style="width:10%;">&nbsp;</td><td align="center" style="width:13%;">Due</td><td align="left" style="width:200px;">&nbsp;</td><td>
+                                          
+                                          
+                                          
+                                          
+                                          
+                                          
+                                      </td>
+</tr><tr class="gridItemBorder" style="color:#616465;background-color:White;font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:normal;height:20px;">
+<td align="center" style="width:5%;">
+                                          <input name="rbtnSel" tabindex="2" type="radio" value="" onclick="SelectLineID('NEW    ' + 'Z' + 'MM/DD/YYYY 12:00:00 AM    '+ 'Z' + 'DD-MM-YY    '+ 'Z' + '    '+'Z'+'Due')">
+                                      </td><td align="center" style="width:15%;">
+                                          <a id="ctl00_ContentPlaceHolder1_grvTimecardSummary_ctl04_lnkTimevcardID" title="Timecard ID" value="953" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$grvTimecardSummary$ctl04$lnkTimevcardID','')" style="color:#354C16;font-family:Arial,Helvetica,sans-serif;font-size:8pt;text-decoration:underline">NEW</a>
+                                      </td><td align="center" style="width:14%;">&nbsp;</td><td align="center" style="width:5%;">&nbsp;</td><td align="center" style="width:13%;"><DD-MM-YY></DD-MM-YY></td><td align="center" style="width:10%;">&nbsp;</td><td align="center" style="width:13%;">Not Due</td><td align="left" style="width:200px;">&nbsp;</td>
+                                          
+                                        
+    </tr>
+</tbody></table>
+</div>
+                          <span id="ViewTimecard" class="Instruction">Note : Click Time Card  to view Time Card</span>
+                      </td>
+                  </tr>
+              </tbody></table>
+
+
   </body>
 </html>
